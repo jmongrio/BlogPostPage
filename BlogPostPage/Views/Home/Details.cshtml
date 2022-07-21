@@ -1,0 +1,19 @@
+﻿@model BlogPostPage.Models.Post
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Html.DisplayFor(model => model.Title)</h1>
+
+<div>
+    <hr />
+    <h4>@Html.DisplayFor(model => model.Content)</h4>
+    <span class="d-flex justify-content-end">Posted on: @Html.DisplayFor(model => model.DatePost)</span>
+    
+</div>
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model?.Id">Delete</a>
+    <a class="btn btn-primary" asp-action="Index">Back</a>
+</div>

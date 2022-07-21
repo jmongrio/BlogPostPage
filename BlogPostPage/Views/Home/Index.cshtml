@@ -1,0 +1,20 @@
+﻿@model IEnumerable<BlogPostPage.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Posts</h1>
+<hr />
+
+@foreach (var item in Model)
+{
+    <div class="card post-list">
+        <div class="card-body">
+            <h2 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h2>
+            <p class="card-text">@Html.DisplayFor(modelItem => item.Content)</p>
+            <a asp-action="Details" asp-route-id="@item.Id">Leer más...</a>
+            <p class="d-flex justify-content-end card-link">Posted on: @Html.DisplayFor(modelItem => item.DatePost)</p>
+        </div>
+    </div>
+}

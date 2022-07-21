@@ -1,0 +1,35 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.post-list{
+    background-color: #f8f8f8;
+}
+
+p{
+    margin:0;
+    font-size: 18px;
+}
+
+hr{
+    margin-top: 0;
+}
+
+.index-preview{
+    height: 10px auto;
+}
