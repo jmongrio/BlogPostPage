@@ -9,7 +9,7 @@ namespace BlogPostPage.Context
 {
     public partial class BlogContext : DbContext
     {
-        string database = "C:\\Users\\Jasón\\source\\repos\\BlogPostPage\\BlogPostPage\\DB\\Blog.db";
+        string database = " "; //Database directory.
         public BlogContext()
         {
         }
